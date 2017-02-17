@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <title>MeArm</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		function Button_onclick(direction) {
+			$.ajax({ url: '/' + direction });
+		}
+	</script>
+    </head>
+	<body>
+		<h1>MeArm</h1>
+		<table>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					Grip
+				</td>
+				<td style="text-align: center">
+					<input id="btnGOpen" type="button" value="Open" onclick="Button_onclick('gopen')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnGClose" type="button" value="Close" onclick="Button_onclick('gclose')" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					Elbow
+				</td>
+				<td style="text-align: center">
+					<input id="btnEUp" type="button" value="Up" onclick="Button_onclick('eup')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnEDown" type="button" value="Down" onclick="Button_onclick('edown')" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					Shoulder
+				</td>
+				<td style="text-align: center">
+					<input id="btnSBack" type="button" value="Back" onclick="Button_onclick('sback')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnSFwd" type="button" value="Forward" onclick="Button_onclick('sfwd')" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					Hip
+				</td>
+				<td style="text-align: center">
+					<input id="btnHLeft" type="button" value="Left" onclick="Button_onclick('hleft')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnHRight" type="button" value="Right" onclick="Button_onclick('hright')" />
+				</td>
+			</tr>
+		</table>
+		<img src="{{ url_for('video_feed') }}">
+    </body>
+</html>
