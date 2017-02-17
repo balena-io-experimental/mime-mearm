@@ -3,6 +3,7 @@
 This is a project to get you started with the [4tronix Picon Zero][piconzero] and the awesome [Mime MeArm][mearm] on resin.io.
 
 ![Alt text](image.jpg?raw=true "Mime MeArm")
+![Alt text](interface.png?raw=true "User interface")
 
 ## Usage
 
